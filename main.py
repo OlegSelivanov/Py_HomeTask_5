@@ -7,18 +7,18 @@ A = 3; B = 5 -> 243 (3⁵)
 A = 2; B = 3 -> 8
 """
 
-# A = int(input('Введите основание степени (A): '))
-# B = int(input('Введите показатель степени (b): '))
+A = int(input('Введите основание степени (A): '))
+B = int(input('Введите показатель степени (b): '))
 
-# def power(A, B):
-#     if B < 0:
-#         return (1/A)*power(A, B+1)
-#     if B > 0:
-#         return A*power(A, B-1)
-#     else:
-#         return 1
+def power(A, B):
+    if B < 0:
+        return (1/A)*power(A, B+1)
+    if B > 0:
+        return A*power(A, B-1)
+    else:
+        return 1
 
-# print(f'Число {A} в степени {B} равно: {power(A, B)}')
+print(f'Число {A} в степени {B} равно: {power(A, B)}')
 
 
 """
