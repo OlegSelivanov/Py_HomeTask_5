@@ -30,9 +30,9 @@ print(f'Число {A} в степени {B} равно: {power(A, B)}')
 4
 """
 
-# def sum(a, b):
-#     if a == 0:
-#         return b
-#     return sum(a-1, b+1)   
+def sum(a, b):
+    if a == 0:
+        return b
+    return sum(a-1, b+1)   
 
-# print(sum(int(input('Введите число (а): ')), int(input('Введите число (b): '))))
+print(sum(int(input('Введите число (а): ')), int(input('Введите число (b): '))))
